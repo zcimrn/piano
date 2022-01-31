@@ -86,7 +86,7 @@ document.addEventListener("keydown", function(event) {
     console.log(event.code, d[event.code], frequency)
 
     let oscillator = audioContext.createOscillator()
-    oscillator.type = "square"
+    oscillator.type = "triangle"
     oscillator.frequency.setValueAtTime(frequency, time)
     oscillator.start(time)
     oscillator.stop(time + 3)
